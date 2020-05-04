@@ -32,28 +32,28 @@ h1, h2, h3{
 
  }
 
- nav ul{
- 	list-style: none;
- 	padding: 0;
- 	display: flex;
- 	flex-direction: column;
- 	align-items: center;
- 	width: 100%;
+	 nav ul{
+	 	list-style: none;
+	 	padding: 0;
+	 	display: flex;
+	 	flex-direction: column;
+	 	align-items: center;
+	 	width: 100%;
  }
 
- nav ul li{
- 	text-align: center;
- 	width: 100%;
- 	font-size: 1.5em;
- 	padding: 2%;
+		 nav ul li{
+		 	text-align: center;
+		 	width: 100%;
+		 	font-size: 1.5em;
+		 	padding: 2%;
  }
 
- nav ul li a{
- 	display: inline-block;
- 	padding: 10px 0;
- 	width: 100%;
- 	text-decoration: none;
- 	color: #4F4F4F;
+			 nav ul li a{
+			 	display: inline-block;
+			 	padding: 10px 0;
+			 	width: 100%;
+			 	text-decoration: none;
+			 	color: #4F4F4F;
  }
 
 @media screen and (min-width: 768px){
@@ -63,9 +63,9 @@ nav{
 	flex-direction: row;
 	justify-content: space-around;
 }
-nav ul{
-	flex-direction: row;
-	width: 70%;
+	nav ul{
+		flex-direction: row;
+		width: 70%;
 
 
 
