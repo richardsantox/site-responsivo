@@ -1,24 +1,24 @@
 //*Formatação Geral */
 body{
-	font-family: "Bowlby One SC", display;
+	font-family: "Bowlby One SC",display;
 	
 }
 h1, h2, h3{
-
 	margin: 0;
-	font-family: "black Ops One", display;
+	font-family: "black Ops One",display ;
 	font width: 700;
-	
  }
 
  p{
- 	font-family: Righteous,"Bowlby One SC";
+ 	font-family: Righteous,display ;
  }
+.container{
+	width: 100%
+}
 
  /*Formatação cabeçalho ou barra de navegação */
  .logo img{
- 	border-radius: 50px;
- 	
+ 	border-radius: 50px;	
  }
 
  nav{
@@ -28,7 +28,7 @@ h1, h2, h3{
 	align-items: center;
 	background-color: #FFFF00;
 	padding: 15px;
-	font-family: "black Ops One", display;
+	font-family: Righteous,"black Ops One", display;
 
  }
 
@@ -56,7 +56,95 @@ h1, h2, h3{
 			 	color: #4F4F4F;
  }
 
+ /*header*/
+
+ header{
+ 	background-image: url('../img/prog.jpeg');
+ 	background-size: cover;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	color: #F5F5F5;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items:center; 
+ 	text-align:center;
+ 	padding: 30px;
+ } 
+ header p{
+ 	margin-bottom: 2em;
+ 	font-size: 1.7em;
+ }
+.botao{
+	color: #F5F5F5;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #FFD700;
+	font-size: .8em;
+	border-radius: 20%
+}
+
+/*sobre*/
+
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #FFFF00;
+	color: #4F4F4F;
+}
+#sobre h2{
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+.foto img{
+	width: 60%;
+}
+.foto{
+	float: left;
+	width: 50%;
+}
+.texto{
+	float: right;
+	width: 50%;
+}
+
+/*especialidades*/
+#especialidade{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+}
+#especialidade div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+#especialidade p{
+	line-height: 1.5;
+	margin:2vh;
+	font-size: 1.2em;
+}
+#especialidade img{
+	margin:10px 0;
+}
+#especialidade h2{
+	font-size: 2em;
+
+}
+
+
+
+
+/*para telas de pc*/
 @media screen and (min-width: 768px){
+
 
 /*cabeçalho ou barra de navegação*/
 nav{
@@ -66,7 +154,52 @@ nav{
 	nav ul{
 		flex-direction: row;
 		width: 70%;
+		}
 
 
-
+ /*header*/
+header{
+	height: 60vh;
+	justify-content: center;
+	font-size: 1.7em;
 }
+
+/*sobre*/
+
+#sobre{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh;
+	justify-content: center;
+	min-height: 80vh;
+}
+#sobre h2{
+	text-align: center;
+	width: 100%;
+}
+#sobre div{
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 0 20px;
+}
+
+#especialidade{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin:0 auto;
+}
+
+#especialidade h2{
+	text-align: center;
+	width: 100%;
+}
+#especialidade div{
+	flex-grow: 1;
+	flex-basis: 150px;
+	padding: 0 10px;
+}
+
+
