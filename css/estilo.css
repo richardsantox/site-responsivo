@@ -80,7 +80,8 @@ h1, h2, h3{
 	padding: 10px 30px;
 	background-color: #FFD700;
 	font-size: .8em;
-	border-radius: 20%
+	border-radius: 20%;
+	font-family: Righteous,display;
 }
 
 /*sobre*/
@@ -119,7 +120,7 @@ h1, h2, h3{
 	position: relative;
 	margin: 0 auto;
 	background-color: #D8D8D8;
-	border-bottom: groove;
+	border-bottom: groove; 
 
 }
 #especialidade div{
@@ -150,12 +151,16 @@ h1, h2, h3{
 	margin-left: 20px;
 	margin-right: 20px;
 	background-color: #D8D8D8;
+	margin: auto;
+	padding-bottom: 30px;
+
 }
 #competencias h2{
 	margin-bottom: 20px;
 	margin-top: 10px;
 	font-size: 2em;
 	text-align: center;
+	width: 90%;
 }
 #competencias h3, p{
 	margin-bottom: 20px;
@@ -167,10 +172,13 @@ h1, h2, h3{
 	text-decoration: none;
 }
 #competencias img{
-	width: 100px;
+	width: 70%;
 	margin-bottom: 0;
+	align-items: center;
+	margin-left: 14%;
 
 }
+
 #competencias .comp p{
 	border-left: 5px groove  #D0A9F5;
 	border-radius: 1%;
@@ -180,9 +188,112 @@ h1, h2, h3{
 	padding-left: 15px;
 	line-height: 1.5;
 }
-#competencias .imag{
-	align-items: center;
+
+.trab img:hover{
+	-ms-transform:rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
 }
+.trab img{
+	border:8px groove #D0A9F5;
+}
+
+
+/*hooby
+*/
+
+#hobby {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin: 0 auto;
+	background-color: #D8D8D8;
+	border-top: groove;
+}
+#hobby h2{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 2em;
+	text-align: center;
+}
+.hobby {
+	width: 90%;
+	align-items: center;
+	text-align: center;
+}
+.hobby h3{
+	font-size: 1.4em;
+	margin-top: 20px;
+	margin-bottom: 14px;
+}
+.hobby iframe{
+	margin-bottom: 20px;
+}
+.imgcode {
+	width: 80%;
+	border:8px groove #D0A9F5;
+}
+.imgcode:hover{
+	-ms-transform:rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+.cod {
+	border-top: groove;
+}
+
+/*contato*/
+
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	background-color: #848484;
+}
+#contato h2{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+	width: 100%;
+	color: #F5F5F5;
+}
+#contato > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	text-align: center;
+	color: #F5F5F5;
+}
+#contato a{
+	text-decoration: none;
+	text-align: center;
+	font-family: Righteous,display;
+	color:#F5F5F5;
+}
+
+
+/*Footer*/
+
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #2E2E2E;
+	color: #F5F5F5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+} 
+
 
 
 
@@ -263,5 +374,40 @@ header{
 }
 #competencias .imag{
 	align-items: center;
-	width: 33.3333%
+	width: 33%;
 }
+
+
+
+#hobby .code{
+	padding-top: 50px;
+}
+#hobby .imgcode{
+    align-items: center;
+	width: 50%;
+}
+
+/*contato*/
+
+#contato{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	max-height: 40vh;
+	width: 100%;
+}
+
+#contato h2,
+#contato p {
+	width: 100%;
+	text-align: center;
+
+}
+
+
+
+
+
